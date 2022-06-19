@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 public class dz_01 {
     public static void main(String[] args) {
         System.out.println("Пример 1: а = 3, b = 2, ответ: " + sqrt(3, 2));
-        System.out.println("Пример 2: а = 2, b = -2, ответ: " + sqrt(2, -2));
+        System.out.println("Пример 2: а = 2, b = -3, ответ: " + sqrt(2, -3));
         System.out.println("Пример 3: а = 3, b = 0, ответ: " + sqrt(3, 0));
         System.out.println("Пример 4: а = 0, b = 0, ответ: " + sqrt(0, 0));
 
@@ -41,7 +41,7 @@ public class dz_01 {
     }
     public static String sqrt(double a, double b)
     {
-        DecimalFormat dF = new DecimalFormat("#.##");
+        DecimalFormat dF = new DecimalFormat("#.######");
         String retRes = a==0?"не определено":dF.format(Math.pow(a, b));;
         return retRes;
     }

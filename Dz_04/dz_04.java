@@ -6,6 +6,7 @@ public class dz_04 {
         PhoneBook pb = new PhoneBook();
         pb.Add(new PhoneItem(new PersonPhoneName("Иванов", "Иван", "Иванович"), "+79998886677"));
         pb.Add(new PhoneItem(new PersonPhoneName("Владимиров", "Владимир", "Владимирович"), "+79998886678"));
+        pb.Add(new PhoneItem(new PersonPhoneName("Казимир", "Бобик", "Рюрикович"), "+76667775522"));
         pb.Add(new PhoneItem(new OrganizationPhoneName("ООО", "Кирпич строй"), "+79998886679"));
         pb.ExportToFile("LongDataFormat.txt",SaveFormat.sfLongFormat);
         pb.ExportToFile("ShortDataFormat.txt",SaveFormat.sfShortFormat);
@@ -14,6 +15,6 @@ public class dz_04 {
 
         System.out.println("----------------------");
         System.out.println(pbTestImport.ShowItemList(ShowType.stFull));
-        // System.out.println(pb.ShowItemList(ShowType.stShort));
+        System.out.println(pb.ShowItemList(ShowType.stShort));
     }
 }

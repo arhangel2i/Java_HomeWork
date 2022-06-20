@@ -1,0 +1,19 @@
+package Dz_04;
+import Dz_04.PhoneBook.SaveFormat;
+import Dz_04.PhoneBook.ShowType;
+public class dz_04 {
+    public static void main(String[] args) {
+        PhoneBook pb = new PhoneBook();
+        pb.Add(new PhoneItem(new PersonPhoneName("Иванов", "Иван", "Иванович"), "+79998886677"));
+        pb.Add(new PhoneItem(new PersonPhoneName("Владимиров", "Владимир", "Владимирович"), "+79998886678"));
+        pb.Add(new PhoneItem(new OrganizationPhoneName("ООО", "Кирпич строй"), "+79998886679"));
+        pb.ExportToFile("LongDataFormat.txt",SaveFormat.sfLongFormat);
+        pb.ExportToFile("ShortDataFormat.txt",SaveFormat.sfShortFormat);
+        PhoneBook pbTestImport = new PhoneBook();
+        pbTestImport.ImportFromFile("LongDataFormat.txt");
+
+        System.out.println("----------------------");
+        System.out.println(pbTestImport.ShowItemList(ShowType.stFull));
+        // System.out.println(pb.ShowItemList(ShowType.stShort));
+    }
+}

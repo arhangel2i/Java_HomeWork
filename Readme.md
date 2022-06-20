@@ -8,4 +8,6 @@
 
 2. [Dz_02 к семинару "Урок 2. Почему вы не можете не использовать API"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_02/dz_02.java)
 
-3. [Dz_02 к семинару "Урок 3. Коллекции JAVA: Введение"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_03/dz_03.java)
+3. [Dz_03 к семинару "Урок 3. Коллекции JAVA: Введение"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_03/dz_03.java)
+
+4. [Dz_04 к семинару "Урок 3. Коллекции JAVA: Введение"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_04/dz_04.java)

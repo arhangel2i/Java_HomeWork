@@ -24,7 +24,7 @@ public class PhoneBook
         StringBuilder sb = new StringBuilder();
         for (PhoneItem pi:phoneList)
         {
-            if (showType == ShowType.stFull)
+            if (showType == ShowType.stShort)
                 sb.append(pi.toShortString());
             else
                 sb.append(pi);

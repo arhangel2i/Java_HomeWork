@@ -60,7 +60,7 @@ public class dz_03 {
         }
         catch(Exception err)
         {
-            System.out.println(err.getMessage());
+            System.out.printf("Произошла не определенная ошибка => %s\n" + err.getMessage());
         }
     }
 

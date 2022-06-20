@@ -1,9 +1,6 @@
 package Dz_04;
-
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.Scanner;
-
 /**
  * Элемент телефонной книги включающий
  */
@@ -72,6 +69,10 @@ public class PhoneItem
             catch(Exception ex)
             {
                 System.out.println(ex.getMessage());
+            }
+            finally
+            {
+                scanner.close();
             }
         }
         return null;

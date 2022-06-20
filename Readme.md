@@ -10,4 +10,4 @@
 
 3. [Dz_03 к семинару "Урок 3. Коллекции JAVA: Введение"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_03/dz_03.java)
 
-4. [Dz_04 к семинару "Урок 3. Коллекции JAVA: Введение"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_04/dz_04.java)
+4. [Dz_04 к семинару "Урок 4. Хранение и обработка данных ч1: приоритетные коллекции"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_04/dz_04.java)

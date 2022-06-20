@@ -13,8 +13,14 @@ public class dz_04 {
         PhoneBook pbTestImport = new PhoneBook();
         pbTestImport.ImportFromFile("LongDataFormat.txt");
 
-        System.out.println("----------------------");
+        PhoneBook pbTestImport1 = new PhoneBook();
+        pbTestImport1.ImportFromFile("ShortDataFormat.txt");
+
+        System.out.println("------------main----------");
+        System.out.println(pb.ShowItemList(ShowType.stFull));
+        System.out.println("------------pbTestImport----------");
         System.out.println(pbTestImport.ShowItemList(ShowType.stFull));
-        System.out.println(pb.ShowItemList(ShowType.stShort));
+        System.out.println("-----------pbTestImport1-----------");
+        System.out.println(pbTestImport1.ShowItemList(ShowType.stFull));
     }
 }

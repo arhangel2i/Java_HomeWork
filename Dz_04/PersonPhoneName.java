@@ -51,6 +51,6 @@ public class PersonPhoneName extends BasePhoneItemName {
 
     @Override
     public String toSaveFormatShort() {
-        return String.format("#%s\n%s\n%s\n%s\n", this.getClass().getName(),this.Family,this.FirstName,this.LastName);
+        return String.format("#%s@%s@%s@%s", this.getClass().getName(),this.Family,this.FirstName,this.LastName);
     }
 }

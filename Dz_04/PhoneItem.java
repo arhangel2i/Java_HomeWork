@@ -40,7 +40,7 @@ public class PhoneItem
     {
         StringBuilder sb = new StringBuilder();
         sb.append(phoneName.toSaveFormatShort());
-        sb.append(phoneNumber + "\n");
+        sb.append("@" + phoneNumber + "\n");
         return sb.toString();
     }
 
@@ -55,6 +55,9 @@ public class PhoneItem
             {
                 Class<?> myClass = Class.forName(recType);
                 Method loadItem = myClass.getMethod("LoadItemFromStringLong", String.class);
+                // if (shortFormat==1)
+                //     loadItem = myClass.getMethod("LoadItemFromStringShort", String.class);
+
                 StringBuilder parameters = new StringBuilder();
                 while(true)
                 {

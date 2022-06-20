@@ -49,6 +49,6 @@ public class OrganizationPhoneName extends BasePhoneItemName {
 
     @Override
     public String toSaveFormatShort() {
-        return String.format("#%s@%s@%s\n", this.getClass().getName(),this.formOrg,this.orgName);
+        return String.format("#%s@%s@%s", this.getClass().getName(),this.formOrg,this.orgName);
     }
 }

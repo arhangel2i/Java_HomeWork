@@ -37,19 +37,16 @@ public class PhoneBook
     {
         try(FileWriter fw = new FileWriter(FileName, false)){
             String saveFormat = "$" + sf + "\n";
-            if (sf == SaveFormat.sfShortFormat)
-            {
-                saveFormat = "$SaveFormat-Short";
-            }
-
             fw.write(saveFormat);
             for (PhoneItem pi:phoneList)
             {
                 if (sf == SaveFormat.sfShortFormat)
                     fw.write(pi.saveFormatShort());
                 else
+                {
                     fw.write(pi.saveFormatLong());
-                fw.write("\n");
+                    fw.write("\n");
+                }
             }
             fw.flush();
             fw.close();
@@ -73,9 +70,14 @@ public class PhoneBook
                     {
                         if (str.startsWith("#"))
                         {
-                            if (sf ==SaveFormat.sfLongFormat)
+                            StringBuilder dataitem = new StringBuilder();
+                            if (sf ==SaveFormat.sfShortFormat)
                             {
-                                StringBuilder dataitem = new StringBuilder();
+                                dataitem.append(str.replace("@", "\n"));
+                            }
+                            else
+                            {
+                                dataitem = new StringBuilder();
                                 dataitem.append(str+"\n");
                                 while ((str = br.readLine())!=null)
                                 {
@@ -84,9 +86,10 @@ public class PhoneBook
                                     else
                                         dataitem.append(str+"\n");
                                 }
-                                PhoneItem phoneItem = PhoneItem.LoadItemFromString(dataitem.toString());
-                                if (phoneItem!=null) this.Add(phoneItem);
                             }
+
+                            PhoneItem phoneItem = PhoneItem.LoadItemFromString(dataitem.toString());
+                            if (phoneItem!=null) this.Add(phoneItem);
                         }
                     }
                     else

@@ -12,4 +12,4 @@
 
 4. [Dz_04 к семинару "Урок 4. Хранение и обработка данных ч1: приоритетные коллекции"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_04/dz_04.java)
 
-4. [Dz_04 к семинару "Урок 5. 04 Хранение и обработка данных ч1: приоритетные коллекции"](https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_05/dz_05.java)
+4. [Dz_05 к семинару "Урок 5. 04 Хранение и обработка данных ч1: приоритетные коллекции"](https://https://github.com/arhangel2i/Java_HomeWork/blob/master/Dz_05/Dz_05.java)

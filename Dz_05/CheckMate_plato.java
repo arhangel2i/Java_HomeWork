@@ -7,14 +7,14 @@ public class CheckMate_plato {
     int checkMate_araray[][];
     int checkMate_backup[][];
 
-    public CheckMate_plato(int x, int y)
+    public CheckMate_plato(int x)
     {
-        checkMate_araray = new int[x][y];
-        checkMate_backup = new int[x][y];
+        checkMate_araray = new int[x][x];
+        checkMate_backup = new int[x][x];
     }
     public CheckMate_plato()
     {
-        this(8, 8);
+        this(8);
     }
     public String showTechnoDeck()
     {
